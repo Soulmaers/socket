@@ -1,0 +1,19 @@
+<form method="POST">
+    <div>
+        <label>Логин:</label>
+        <input type="text" name="username" /><br />
+    </div>
+    <div>
+        <label>Пароль:</label>
+        <input type="password" name="password" />
+    </div>
+    <div>
+        <input type="submit" value="Войти" />
+    </div>
+    <a href="/api/user/signup" class='text-center new-account'>Регистрация</a>
+</form>
+<% if (message) { %>
+    <p>
+        <%= message %>
+    </p>
+    <% } %>
